@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 :root {
     font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +56,7 @@ header .list:hover ul {
    position: absolute;
    top: 41px;
    width: 150px;
-   height: 200px;
+   height: 250px;
     direction: ltr;
    padding: 10px;
 }
@@ -66,8 +67,11 @@ header .list:hover ul a {
     font-weight: bold;
  }
  header .list ul li {
-    border-bottom: 1px solid black;
     padding: 10px 0;
+ }
+ header .list ul .border-bottom {
+    border-bottom: 1px solid black;
+
  }
  header .list ul li:hover a {
     padding-left: 20px;
