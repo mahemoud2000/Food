@@ -324,7 +324,7 @@ section .our-food .cards-1 .card span {
     border-radius: 10px;
 }
 .about-food .group-2 .photo-2 img {
-    width: 300px;
+    width: 250px;
 }
 /* Media About-Food Start  */
 @media (max-width: 951px) {
