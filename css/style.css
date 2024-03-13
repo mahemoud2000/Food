@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header Start */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+header img {
+    width: 100px;
+}
+header .links {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+} 
+/* Class List Start */
+header .list   {
+    width: 50px;
+    height: fit-content;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(210, 210, 47);
+    border-radius: 10px;
+    /* display: none; */
+    direction: rtl;
+    padding: 10px;
+    position: relative;
+    right: -40%;
+    bottom: -20px;
+    transform: translate(0, -50%);
+    display: none;
+    z-index: 8888;
+} 
+
+header .list:hover .two {
+    width: 30px;
+}
+header .list:hover ul {
+   display: block;
+   background-color:  rgb(210, 210, 47);
+   position: absolute;
+   top: 41px;
+   width: 150px;
+   height: 200px;
+    direction: ltr;
+   padding: 10px;
+}
+header .list:hover ul a {
+    color: black;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-weight: bold;
+ }
+ header .list ul li {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+ }
+ header .list ul li:hover a {
+    padding-left: 20px;
+    transition: .5s;
+    transition-timing-function: ease-in;
+ }
+ header .list ul li:hover {
+    cursor: pointer;
+ }
+header  .list  .lis {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 3px 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); 
+} 
+header  .list  .two {
+    width: 15px;
+    transition: .5s;
+} 
+/* Class List end */
+/* Element ul Start */
+header .links ul  {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+header .links ul li  {
+    list-style: none;
+}
+header .links ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* Element ul End */
+/* Class Main Start */
+header .links .main-login {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Class Main End */
+/* my Frame In Header start */
+.btn {
+    text-decoration: none;
+    background-color: rgb(210, 210, 47);
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+/* my Frame In Header end */
+/* Media In Header Start */
+@media (max-width: 951px) {
+    header .links ul {
+        display: none;
+    }
+    header .links .main-login {
+        display: none;
+    } 
+    header  .list  {
+        display: block;
+    }
+
+    header .list  .lis {
+        display: block !important;
+    } 
+}
+/* Media In Header End */
+/* Header End */
+
+/* Section Start */
+section  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #2e2a2a;
+}
+/* Slid Start */
+section  .slid {
+    height: 600px;
+    background-image: url(../images/id1.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+    animation-name: slider;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+section .slid .group-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 50px;
+}
+section .slid .group-1  h1 {
+    color: white;    
+    position: relative;
+    left: 22%;
+    font-size: 30px;
+}
+section .slid .group-1  h1 span{
+    color: rgb(210, 210, 50);
+    font-size: 20px;
+    /* display: block; */
+}
+section .slid .group-1   p {
+    color: white;    
+}
+section .slid .group-1 .btn-slid  a {
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: rgb(210, 210, 50);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+/* Animation slid Start  */
+@keyframes slider {
+    0% {
+        background-image: url(../images/id3.webp);
+    }
+    25% {
+        background-image: url(../images/id1.webp);
+    }
+    50% {
+        background-image: url(../images/id2.webp);
+    }
+    75% {
+        background-image: url(../images/P-fresh.png);
+    }
+    100% {
+        background-image: url(../images/id2.webp);
+    }
+}
+/* Animation slid End */
+/* Slid End */
+/* Our Food Start */
+section .our-food {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 10px;
+} 
+section .our-food .head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+section .our-food .head h2 {
+    font-size: 30px;
+}
+section .our-food .head p {
+    line-height: 1.8;
+    word-spacing: 5px;
+}
+section .our-food .cards-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+section .our-food .cards-1 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+section .our-food .cards-1 .card .photo {
+    width: 100%;
+    text-align: center;
+}
+section .our-food .cards-1 .card img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px black ,-3px -3px 5px black;
+}
+section .our-food .cards-1 .card h3 {
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+}
+section .our-food .cards-1 .card p {
+    word-spacing: 5px;
+    text-align: center;
+    line-height: 1.5;
+}
+section .our-food .cards-1 .card span {
+   display: block;
+   width: 100%;
+   color: rgb(210, 210, 47);
+   text-align: center;
+}
+/* Media Oue Food Start */
+@media (max-width: 800px) {
+    .cards-1 {
+        flex-direction: column;
+    }
+
+}
+/* Media Oue Food End */
+/* Our Food End */
+/* About Start */
+.about-food {
+    width: 100%;
+    background-image: url(../images/id1.webp);
+}
+.about-food .group-2 {
+    width: 100%;
+    background-color: rgba(15, 1, 1, 0.799);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0 0 0;
+}
+.about-food .group-2 .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    color: white;
+}
+.about-food .group-2 h3 {
+    word-spacing: 5px;
+    line-height: 1.5;
+}
+.about-food .group-2 p {
+    
+}
+.about-food .group-2 .btn-about a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(210, 210, 47);
+    padding: 10px;
+    border-radius: 10px;
+}
+/* Media About-Food Start  */
+@media (max-width: 951px) {
+    .about-food .group-2 {
+        flex-direction: column;
+    }
+}
+/* Media About-Food End  */
+/* About End */
+/* Food Brands Start */
+section .food-brands {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+section .food-brands .head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section .food-brands .head h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; 
+}
+section .food-brands .head p {
+    
+}
+section .food-brands .cards-2 {
+    width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+section .food-brands .cards-2 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px ;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.12),-1px -1px 1px 1px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    padding: 2%;
+}
+section .food-brands .cards-2 .card .photo-3  {
+    width: 100%;
+    text-align: center;
+}
+section .food-brands .cards-2 .card .photo-3 img {
+    width: 100px;
+}
+section .food-brands .cards-2 .card p {
+    
+}
+/* Media Food Brands Start */
+    @media 
+    (max-width: 951px) {
+        .food-brands .cards-2 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+/* Media Food Brands End */
+/* Food Brands End */
+/* Footer Start */
+footer {
+    width: 100%;
+    background-color: #2e2a2a;
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+footer .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .head .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .head .icon-contact {
+    display: flex;
+    align-items: center;
+}
+footer .head .contact h4 {
+    width: 100%;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+footer .head .contact .icon-contact img {
+    width: 30px;
+}
+footer .head .contact .icon-contact span {
+
+}
+
+footer .head .icones-social {
+    display: flex;
+    flex-direction: column;
+}
+footer .head .icones-social .photo-footer {
+
+}
+footer .head .icones-social .photo-footer img {
+    width: 150px;
+}
+footer .head .icones-social .icones {
+    
+}
+footer .head .icones-social .icones img {
+    width: 30px;
+}
+
+footer .head .quick-link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .head .quick-link h4 {
+    
+}
+footer .head .quick-link ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .head .quick-link ul li {
+    list-style: none;
+}
+footer .head .quick-link ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer .foot {
+    width: 100%;
+    text-align: center;
+}
+/* Medai Footer Start */
+@media (max-width: 951px) {
+   footer .head {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Medai Footer End */
+/* Footer End */
+/* Section End */
