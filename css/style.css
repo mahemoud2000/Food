@@ -301,6 +301,7 @@ section .our-food .cards-1 .card span {
     justify-content: space-around;
     align-items: center;
     padding: 5% 0 0 0;
+    padding: 5%;
 }
 .about-food .group-2 .desc {
     display: flex;
@@ -324,7 +325,7 @@ section .our-food .cards-1 .card span {
     border-radius: 10px;
 }
 .about-food .group-2 .photo-2 img {
-    width: 250px;
+    width: 300px;
 }
 /* Media About-Food Start  */
 @media (max-width: 951px) {
