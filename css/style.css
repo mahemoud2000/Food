@@ -290,7 +290,7 @@ section .our-food .cards-1 .card span {
 /* Media Oue Food End */
 /* Our Food End */
 /* About Start */
-.section  .about-food {
+.about-food {
     width: 100%;
     background-image: url(../images/id1.webp);
 }
@@ -302,7 +302,7 @@ section .our-food .cards-1 .card span {
     align-items: center;
     padding: 5% 0 0 0;
 }
-.section  .about-food .group-2 .desc {
+.about-food .group-2 .desc {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -313,17 +313,17 @@ section .our-food .cards-1 .card span {
     word-spacing: 5px;
     line-height: 1.5;
 }
-.section  .about-food .group-2 p {
+.about-food .group-2 p {
     
 }
-.section  .about-food .group-2 .btn-about a {
+.about-food .group-2 .btn-about a {
     color: white;
     text-decoration: none;
     background-color: rgb(210, 210, 47);
     padding: 10px;
     border-radius: 10px;
 }
-.section .about-food .group-2 .photo-2 img {
+.about-food .group-2 .photo-2 img {
     width: 300px;
 }
 /* Media About-Food Start  */
