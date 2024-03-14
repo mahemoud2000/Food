@@ -264,7 +264,7 @@ section .our-food .cards-1 .card .photo {
     text-align: center;
 }
 section .our-food .cards-1 .card img {
-    width: 250px;
+    width: 50%;
     border-radius: 50%;
     box-shadow: 3px 3px 5px black ,-3px -3px 5px black;
 }
@@ -329,7 +329,7 @@ section .our-food .cards-1 .card span {
     border-radius: 10px;
 }
 .about-food .group-2 .photo-2 img {
-    width: 300px;
+    width: 100%;
 }
 /* Media About-Food Start  */
 @media (max-width: 951px) {
@@ -399,10 +399,126 @@ section .food-brands .cards-2 .card p {
     }
 /* Media Food Brands End */
 /* Food Brands End */
+/* Contact Start */
+section .contact {
+    width: 100%;
+    /* background-color: #0e0a00; */
+    background-image: url(../images/P-fresh.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    gap: 50px;
+    font-size: 20px;
+}
+section .contact h3 {
+    color: white;
+}   
+section .contact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #dddddd37;
+    padding: 5%;
+    border-radius: 10px;
+    gap: 50px;
+}
+section .contact form h4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 1%;
+    color: white;
+    border-bottom: 1px solid white;
+}
+section .contact form .countaner {
+    width: 100%;
+    height: 100%;
+    background-color: #7f7f7f55;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+    gap: 30px;
+    border-radius: 20px;
+}
+section .contact .countaner .name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section .contact .countaner .name label {
+    color: white;
+}
+section .contact .countaner .email label {
+    color: white;
+}
+section .contact .countaner .subjet label {
+    color: white;
+}
+section .contact .countaner .name input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    border-bottom: 2px solid black;
+    /* color: white; */
+}
+section .contact .countaner .email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section .contact .countaner .email input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    border-bottom: 2px solid black;
+}
+section .contact .countaner .subjet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section .contact .countaner .subjet input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+section .contact .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+section .contact .inputs input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    background-color: #aaa;
+    cursor: pointer;
+    width: 100%;
+}
+/* Contact End */
 /* Footer Start */
 footer {
     width: 100%;
-    background-color: #2e2a2a;
+    background-color: #2e2a2adf;
     padding: 5%;
     color: white;
     display: flex;
